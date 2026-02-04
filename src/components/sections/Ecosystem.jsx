@@ -5,11 +5,11 @@ import { ArrowRight } from 'lucide-react';
 
 const Ecosystem = () => {
     return (
-        <section id="ecosystem" className="py-20 bg-slate-50">
+        <section id="ecosystem" className="py-10 md:py-20 bg-slate-50">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center mb-16">
-                    <h2 className="text-3xl font-bold mb-4 text-balance">Satu Pintu untuk Transformasi Digital Anda</h2>
-                    <p className="text-slate-600">
+                <div className="text-center mb-10 md:mb-16">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 text-balance">Satu Pintu untuk Transformasi Digital Anda</h2>
+                    <p className="text-sm md:text-base text-slate-600">
                         Kami menjembatani gap antara teori akademis dan implementasi industri melalui unit bisnis yang terintegrasi.
                     </p>
                 </div>
@@ -37,7 +37,7 @@ const Ecosystem = () => {
                         const Icon = service.icon;
 
                         return (
-                            <div key={service.id} className="glass-card p-8 rounded-2xl hover:shadow-xl transition group flex flex-col h-full bg-white">
+                            <div key={service.id} className="glass-card p-6 md:p-8 rounded-2xl hover:shadow-xl transition group flex flex-col h-full bg-white">
                                 <div className={clsx(
                                     "w-12 h-12 rounded-lg flex items-center justify-center mb-6 font-bold group-hover:text-white transition duration-300",
                                     iconStyle

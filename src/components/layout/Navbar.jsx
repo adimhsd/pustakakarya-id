@@ -20,12 +20,12 @@ const Navbar = () => {
         <nav
             className={clsx(
                 "fixed w-full z-50 transition-all duration-300",
-                isScrolled ? "bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 py-4" : "bg-transparent py-6"
+                isScrolled ? "bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 py-3 md:py-4" : "bg-transparent py-4 md:py-6"
             )}
         >
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-                <a href="#" className="font-bold text-xl tracking-tight text-blue-700">
-                    PUSTAKA<span className="text-slate-700">KARYA</span>
+                <a href="#" className="font-bold text-xl md:text-2xl tracking-tight text-blue-700">
+                    DIGITAL <span className="text-slate-700">PUSTAKA KARYA</span>
                 </a>
 
                 {/* Desktop Menu */}
@@ -54,6 +54,7 @@ const Navbar = () => {
                 <button
                     className="md:hidden text-slate-700"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    aria-label="Toggle navigation menu"
                 >
                     {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>

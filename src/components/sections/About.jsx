@@ -4,11 +4,11 @@ import { ABOUT_CONTENT } from '../../constants';
 
 const About = () => {
     return (
-        <section id="about" className="py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+        <section id="about" className="py-10 md:py-20 bg-white">
+            <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
                 <div>
-                    <h2 className="text-3xl font-bold mb-6">{ABOUT_CONTENT.title}</h2>
-                    <p className="text-slate-600 leading-relaxed mb-6">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">{ABOUT_CONTENT.title}</h2>
+                    <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-6">
                         {ABOUT_CONTENT.description}
                     </p>
                     <div className="grid grid-cols-2 gap-6">

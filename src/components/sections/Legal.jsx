@@ -4,14 +4,14 @@ import { ShieldCheck } from 'lucide-react';
 
 const Legal = () => {
     return (
-        <section id="legal" className="py-20 bg-white">
+        <section id="legal" className="py-10 md:py-20 bg-white">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center mb-16">
+                <div className="text-center mb-10 md:mb-16">
                     <div className="inline-flex items-center justify-center p-3 bg-blue-100 text-blue-700 rounded-full mb-4">
                         <ShieldCheck size={24} />
                     </div>
-                    <h2 className="text-3xl font-bold mb-4">{LEGAL_CONTENT.title}</h2>
-                    <p className="text-slate-600 max-w-2xl mx-auto">
+                    <h2 className="text-2xl md:text-3xl font-bold mb-4">{LEGAL_CONTENT.title}</h2>
+                    <p className="text-sm md:text-base text-slate-600 max-w-2xl mx-auto">
                         {LEGAL_CONTENT.description}
                     </p>
                 </div>
