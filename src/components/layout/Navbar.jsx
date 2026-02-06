@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Instagram, Facebook, Twitter, Phone } from 'lucide-react';
 import { NAVIGATION, COMPANY_INFO } from '../../constants';
 import ThemeToggle from '../ui/ThemeToggle';
 import clsx from 'clsx';
@@ -41,14 +41,31 @@ const Navbar = () => {
                     ))}
                 </div>
 
-                <a
-                    href={COMPANY_INFO.whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hidden md:inline-flex bg-blue-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-200"
-                >
-                    Konsultasi
-                </a>
+                <div className="hidden md:flex items-center space-x-4">
+                    <div className="hidden md:flex items-center gap-3 text-slate-600">
+                        <a href={COMPANY_INFO.socials.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="hover:text-pink-600 transition">
+                            <Instagram size={18} />
+                        </a>
+                        <a href={COMPANY_INFO.socials.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="hover:text-blue-600 transition">
+                            <Facebook size={18} />
+                        </a>
+                        <a href={COMPANY_INFO.socials.x} target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="hover:text-slate-800 transition">
+                            <Twitter size={18} />
+                        </a>
+                        <a href={COMPANY_INFO.whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="hover:text-green-600 transition">
+                            <Phone size={18} />
+                        </a>
+                    </div>
+
+                    <a
+                        href={COMPANY_INFO.whatsappUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-blue-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-200"
+                    >
+                        Konsultasi
+                    </a>
+                </div>
 
                 {/* Mobile Menu Button */}
                 <button

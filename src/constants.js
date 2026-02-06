@@ -4,12 +4,13 @@ export const COMPANY_INFO = {
   name: "PT Digital Pustaka Karya Indonesia",
   shortName: "Pustaka Karya",
   email: "admin@pustakakarya.id",
-  phone: "6281234567890", // Placeholder
+  phone: "6285117705470",
   address: "Indonesia", // Placeholder
-  whatsappUrl: "https://wa.me/6281234567890", // Placeholder
+  whatsappUrl: "https://wa.me/6285117705470",
   socials: {
     instagram: "#",
-    linkedin: "#",
+    facebook: "#",
+    x: "#"
   }
 };
 
