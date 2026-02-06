@@ -24,7 +24,7 @@ const Footer = () => {
                     </a>
                     <a href={COMPANY_INFO.whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="text-white hover:text-green-400 transition flex items-center gap-2">
                         <Phone size={20} />
-                        <span className="text-sm">+62 851-1770-5470</span>
+
                     </a>
                 </div>
 
