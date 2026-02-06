@@ -4,23 +4,23 @@ import { ABOUT_CONTENT } from '../../constants';
 
 const About = () => {
     return (
-        <section id="about" className="py-10 md:py-20 bg-white">
-            <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
+        <section id="about" className="py-8 md:py-12 bg-white">
+            <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-6 md:gap-10 items-center">
                 <div>
                     <h2 className="text-2xl md:text-3xl font-bold mb-4 md:mb-6">{ABOUT_CONTENT.title}</h2>
                     <p className="text-sm md:text-base text-slate-600 leading-relaxed mb-6">
                         {ABOUT_CONTENT.description}
                     </p>
                     <div className="grid grid-cols-2 gap-6">
-                        <div className="p-4 bg-blue-50 rounded-lg">
+                        <div className="p-3 bg-blue-50 rounded-lg">
                             <div className="font-bold text-blue-700 text-xl">Visi</div>
-                            <p className="text-sm text-slate-600 mt-1 text-balance">
+                            <p className="text-sm text-slate-600 mt-1 text-balance justify-text">
                                 {ABOUT_CONTENT.vision}
                             </p>
                         </div>
-                        <div className="p-4 bg-slate-50 rounded-lg">
+                        <div className="p-3 bg-slate-50 rounded-lg">
                             <div className="font-bold text-slate-800 text-xl">Misi</div>
-                            <p className="text-sm text-slate-600 mt-1 text-balance">
+                            <p className="text-sm text-slate-600 mt-1 text-balance justify-text">
                                 {ABOUT_CONTENT.mission}
                             </p>
                         </div>
