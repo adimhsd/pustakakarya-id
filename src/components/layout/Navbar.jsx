@@ -20,54 +20,63 @@ const Navbar = () => {
         <nav
             className={clsx(
                 "fixed w-full z-50 transition-all duration-300",
-                isScrolled ? "bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 py-3 md:py-4" : "bg-transparent py-4 md:py-6"
+                isScrolled
+                    ? "bg-[var(--bg-navbar)] backdrop-blur-[16px] border-b border-line py-3 md:py-4"
+                    : "bg-transparent py-4 md:py-6"
             )}
         >
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-                <a href="#" className="font-bold text-xl md:text-2xl tracking-tight text-blue-700">
-                    DIGITAL <span className="text-slate-700">PUSTAKA KARYA</span>
+                <a href="#" className="font-bold text-xl md:text-2xl tracking-tight text-ubuntu-orange">
+                    DIGITAL <span className="text-ink-primary">PUSTAKA KARYA</span>
                 </a>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex space-x-8 font-medium text-sm text-slate-600">
+                <div className="hidden md:flex space-x-8 font-medium text-sm text-ink-secondary">
                     {NAVIGATION.map((item) => (
                         <a
                             key={item.label}
                             href={item.href}
-                            className="hover:text-blue-600 transition"
+                            className="hover:text-ubuntu-orange transition"
                         >
                             {item.label}
                         </a>
                     ))}
                 </div>
 
-                <a
-                    href={COMPANY_INFO.whatsappUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hidden md:inline-flex bg-blue-600 text-white px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-700 transition shadow-lg shadow-blue-200"
-                >
-                    Konsultasi
-                </a>
+                <div className="hidden md:flex items-center gap-3">
+                    <ThemeToggle />
+                    <a
+                        href={COMPANY_INFO.whatsappUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn-primary bg-ubuntu-orange hover:bg-ubuntu-orangeHover active:bg-ubuntu-orangeActive text-white px-5 py-2.5 rounded-[8px] text-sm font-medium transition shadow-[0_6px_16px_-4px_rgba(233,84,32,0.45)]"
+                    >
+                        Konsultasi
+                    </a>
+                </div>
 
-                {/* Mobile Menu Button */}
-                <button
-                    className="md:hidden text-slate-700"
-                    onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-                    aria-label="Toggle navigation menu"
-                >
-                    {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-                </button>
+                {/* Mobile Actions */}
+                <div className="flex md:hidden items-center gap-2">
+                    <ThemeToggle />
+                    <button
+                        type="button"
+                        className="p-1.5 rounded-[8px] text-ink-primary hover:bg-surface-hover transition"
+                        onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                        aria-label="Toggle navigation menu"
+                    >
+                        {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
+                    </button>
+                </div>
             </div>
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-200 shadow-lg p-6 flex flex-col space-y-4">
+                <div className="md:hidden absolute top-full left-0 w-full bg-surface-card border-b border-line shadow-[var(--shadow-card)] p-6 flex flex-col space-y-4">
                     {NAVIGATION.map((item) => (
                         <a
                             key={item.label}
                             href={item.href}
-                            className="text-slate-600 font-medium hover:text-blue-600 transition"
+                            className="text-ink-secondary font-medium hover:text-ubuntu-orange transition"
                             onClick={() => setIsMobileMenuOpen(false)}
                         >
                             {item.label}
@@ -77,7 +86,7 @@ const Navbar = () => {
                         href={COMPANY_INFO.whatsappUrl}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-blue-600 text-white px-5 py-3 rounded-xl text-center font-semibold hover:bg-blue-700 transition"
+                        className="btn-primary bg-ubuntu-orange hover:bg-ubuntu-orangeHover active:bg-ubuntu-orangeActive text-white px-5 py-3 rounded-[8px] text-center font-medium transition shadow-[0_6px_16px_-4px_rgba(233,84,32,0.45)]"
                         onClick={() => setIsMobileMenuOpen(false)}
                     >
                         Konsultasi

@@ -4,31 +4,56 @@ import { Instagram, Facebook, Twitter, Phone } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer className="bg-slate-900 text-slate-400 py-8 border-t border-slate-800">
+        <footer id="contact" className="bg-surface-elevated text-ink-muted border-t border-line py-10">
             <div className="max-w-7xl mx-auto px-6 text-center">
-                <div className="font-bold text-white text-lg mb-2">DIGITAL PUSTAKA KARYA</div>
-                <p className="text-xs mb-4 max-w-md mx-auto">
+                <div className="font-bold text-ink-primary text-lg mb-2">
+                    <span className="text-ubuntu-orange">DIGITAL</span> PUSTAKA KARYA
+                </div>
+                <p className="text-xs text-ink-secondary mb-6 max-w-md mx-auto leading-relaxed">
                     {COMPANY_INFO.name} <br />
-                    Email: {COMPANY_INFO.email}
+                    <span className="font-mono text-ink-muted">Email: {COMPANY_INFO.email}</span>
                 </p>
 
-                <div className="flex items-center justify-center gap-6 mb-4">
-                    <a href={COMPANY_INFO.socials.instagram} target="_blank" rel="noopener noreferrer" aria-label="Instagram" className="text-white hover:text-pink-500 transition">
-                        <Instagram size={20} />
+                <div className="flex items-center justify-center gap-4 mb-6">
+                    <a
+                        href={COMPANY_INFO.socials.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                        className="w-10 h-10 rounded-[8px] bg-surface-card border border-line hover:border-[var(--border-highlight)] text-ink-secondary hover:text-ubuntu-orange flex items-center justify-center transition shadow-[var(--shadow-card)]"
+                    >
+                        <Instagram size={18} />
                     </a>
-                    <a href={COMPANY_INFO.socials.facebook} target="_blank" rel="noopener noreferrer" aria-label="Facebook" className="text-white hover:text-blue-500 transition">
-                        <Facebook size={20} />
+                    <a
+                        href={COMPANY_INFO.socials.facebook}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                        className="w-10 h-10 rounded-[8px] bg-surface-card border border-line hover:border-[var(--border-highlight)] text-ink-secondary hover:text-ubuntu-orange flex items-center justify-center transition shadow-[var(--shadow-card)]"
+                    >
+                        <Facebook size={18} />
                     </a>
-                    <a href={COMPANY_INFO.socials.x} target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)" className="text-white hover:text-sky-400 transition">
-                        <Twitter size={20} />
+                    <a
+                        href={COMPANY_INFO.socials.x}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="X (Twitter)"
+                        className="w-10 h-10 rounded-[8px] bg-surface-card border border-line hover:border-[var(--border-highlight)] text-ink-secondary hover:text-ubuntu-orange flex items-center justify-center transition shadow-[var(--shadow-card)]"
+                    >
+                        <Twitter size={18} />
                     </a>
-                    <a href={COMPANY_INFO.whatsappUrl} target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" className="text-white hover:text-green-400 transition flex items-center gap-2">
-                        <Phone size={20} />
-
+                    <a
+                        href={COMPANY_INFO.whatsappUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="WhatsApp"
+                        className="w-10 h-10 rounded-[8px] bg-surface-card border border-line hover:border-[var(--border-highlight)] text-ink-secondary hover:text-ubuntu-orange flex items-center justify-center transition shadow-[var(--shadow-card)]"
+                    >
+                        <Phone size={18} />
                     </a>
                 </div>
 
-                <div className="text-xs border-t border-slate-800 pt-4">
+                <div className="font-mono text-xs text-ink-muted border-t border-line pt-6">
                     {FOOTER_CONTENT.copyright}
                 </div>
             </div>

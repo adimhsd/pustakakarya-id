@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-    darkMode: 'class',
+    darkMode: ['selector', '[data-theme="dark"]'],
     content: [
         "./index.html",
         "./src/**/*.{js,ts,jsx,tsx}",
@@ -8,25 +8,41 @@ export default {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Inter', 'sans-serif'],
+                sans: ['Ubuntu', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+                mono: ['Ubuntu Mono', 'monospace'],
             },
             colors: {
-                // Define custom colors if needed
-                primary: {
-                    50: '#eff6ff',
-                    100: '#dbeafe',
-                    200: '#bfdbfe',
-                    300: '#93c5fd',
-                    400: '#60a5fa',
-                    500: '#3b82f6',
-                    600: '#2563eb',
-                    700: '#1d4ed8', // Deep Blue
-                    800: '#1e40af',
-                    900: '#1e3a8a',
-                    950: '#172554',
-                }
-            }
+                ubuntu: {
+                    orange: '#E95420',
+                    orangeHover: '#D44615',
+                    orangeActive: '#C03D10',
+                    aubergine: '#77216F',
+                    aubergineMid: '#5E2750',
+                    aubergineDark: '#2C001E',
+                },
+                surface: {
+                    base: 'var(--bg-base)',
+                    card: 'var(--bg-surface)',
+                    elevated: 'var(--bg-elevated)',
+                    hover: 'var(--bg-hover)',
+                    tag: 'var(--bg-tag)',
+                },
+                ink: {
+                    primary: 'var(--text-primary)',
+                    secondary: 'var(--text-secondary)',
+                    muted: 'var(--text-muted)',
+                    disabled: 'var(--text-disabled)',
+                },
+                line: 'var(--border-subtle)',
+                semantic: {
+                    emerald: 'var(--accent-emerald)',
+                    amber: 'var(--accent-amber)',
+                    danger: 'var(--accent-danger)',
+                    info: 'var(--accent-info)',
+                    aubergineText: 'var(--badge-aubergine-text)',
+                },
+            },
         },
     },
     plugins: [],
-}
+};

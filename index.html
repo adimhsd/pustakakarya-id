@@ -1,10 +1,27 @@
 <!doctype html>
-<html lang="en">
+<html lang="id" class="scroll-smooth" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/pustaka-logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pustaka Karya | Solusi Ekosistem Digital & Publikasi Ilmiah</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Ubuntu+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('adi_lp_theme');
+          var resolved = saved === 'light' ? 'light' : 'dark';
+          document.documentElement.setAttribute('data-theme', resolved);
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>

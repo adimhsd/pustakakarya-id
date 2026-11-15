@@ -1,29 +1,46 @@
 import React, { useState, useEffect } from 'react';
-import { Moon, Sun } from 'lucide-react';
+
+const getInitialTheme = () => {
+    try {
+        const saved = localStorage.getItem('adi_lp_theme');
+        if (saved === 'light' || saved === 'dark') {
+            return saved;
+        }
+    } catch {
+        // Ignore storage errors and fall back to DOM attribute
+    }
+    const attr = document.documentElement.getAttribute('data-theme');
+    return attr === 'light' ? 'light' : 'dark';
+};
 
 const ThemeToggle = () => {
-    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+    const [theme, setTheme] = useState(getInitialTheme);
 
     useEffect(() => {
-        if (theme === 'dark') {
-            document.documentElement.classList.add('dark');
-        } else {
-            document.documentElement.classList.remove('dark');
+        const resolved = theme === 'light' ? 'light' : 'dark';
+        document.documentElement.setAttribute('data-theme', resolved);
+        try {
+            localStorage.setItem('adi_lp_theme', resolved);
+        } catch {
+            // Ignore storage errors
         }
-        localStorage.setItem('theme', theme);
     }, [theme]);
 
     const toggleTheme = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
+        setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
     };
+
+    const isLight = theme === 'light';
 
     return (
         <button
+            type="button"
             onClick={toggleTheme}
-            className="p-2 rounded-full transition-colors duration-200 hover:bg-slate-100 dark:hover:bg-slate-800 text-slate-600 dark:text-slate-300"
-            aria-label="Toggle Dark Mode"
+            className="rounded-full font-mono text-xs px-3.5 py-1.5 bg-surface-elevated hover:bg-surface-hover border border-line hover:border-[var(--border-highlight)] text-ink-primary shadow-[var(--shadow-card)] flex items-center gap-1.5 transition focus:outline-none focus-visible:ring-2 focus-visible:ring-[var(--focus-ring)]"
+            aria-label="Ganti Tema Terang/Gelap"
         >
-            {theme === 'light' ? <Moon size={20} /> : <Sun size={20} />}
+            <span aria-hidden="true">{isLight ? '🌙' : '☀️'}</span>
+            <span>{isLight ? 'Dark' : 'Light'}</span>
         </button>
     );
 };
