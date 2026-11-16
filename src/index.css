@@ -12,7 +12,7 @@
   --fs-body: 0.92rem;
   --fs-stat-val: 1.65rem;
   --avatar-size: 240px;
-  --section-pad: 1.6rem;
+  --section-pad: 2.5rem;
 
   /* Ubuntu Brand & Accent */
   --color-primary: #e95420;
@@ -65,7 +65,7 @@
     --fs-body: 0.76rem;
     --fs-stat-val: 1.15rem;
     --avatar-size: 145px;
-    --section-pad: 0.95rem;
+    --section-pad: 1.5625rem;
   }
 }
 

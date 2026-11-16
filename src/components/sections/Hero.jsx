@@ -3,14 +3,14 @@ import { HERO_CONTENT, COMPANY_INFO } from '../../constants';
 
 const Hero = () => {
     return (
-        <section className="pt-20 pb-5 md:pt-24 md:pb-7 px-6">
+        <section className="pt-24 pb-7 md:pt-28 md:pb-10 px-6">
             <div className="max-w-7xl mx-auto text-center">
-                <div className="inline-flex items-center gap-2 persona-tag px-3.5 py-1 text-xs mb-2.5">
+                <div className="inline-flex items-center gap-2 persona-tag px-3.5 py-1 text-xs mb-3">
                     <span className="w-2 h-2 rounded-full bg-ubuntu-orange"></span>
                     <span>{COMPANY_INFO.name}</span>
                 </div>
 
-                <div className="font-mono text-xs text-ink-muted mb-2.5">
+                <div className="font-mono text-xs text-ink-muted mb-3">
                     {HERO_CONTENT.badge}
                 </div>
 
@@ -19,7 +19,7 @@ const Hero = () => {
                     <span className="text-ubuntu-orange">{HERO_CONTENT.headlineHighlight}</span>
                 </h1>
 
-                <p className="text-sm md:text-base text-ink-secondary max-w-3xl mx-auto mb-5 md:mb-6 leading-relaxed">
+                <p className="text-sm md:text-base text-ink-secondary max-w-3xl mx-auto mb-6 md:mb-7 leading-relaxed">
                     {HERO_CONTENT.subheadline}
                 </p>
 

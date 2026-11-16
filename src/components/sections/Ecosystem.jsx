@@ -30,7 +30,7 @@ const Ecosystem = () => {
     return (
         <section id="ecosystem" className="py-[var(--section-pad)] bg-transparent">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center mb-5 md:mb-6">
+                <div className="text-center mb-7 md:mb-8">
                     <div className="font-mono text-xs uppercase tracking-wider text-ubuntu-orange mb-1.5">
                         // Layanan & Ekosistem Bisnis
                     </div>
@@ -52,7 +52,7 @@ const Ecosystem = () => {
                             <div
                                 key={service.id}
                                 className={clsx(
-                                    "rounded-[12px] bg-surface-card hover:bg-surface-hover border shadow-[var(--shadow-card)] p-5 transition group flex flex-col h-full",
+                                    "rounded-[12px] bg-surface-card hover:bg-surface-hover border shadow-[var(--shadow-card)] p-6 transition group flex flex-col h-full",
                                     isPrimary
                                         ? "border-ubuntu-orange/60 ring-1 ring-ubuntu-orange/20 hover:border-ubuntu-orange"
                                         : "border-line hover:border-[var(--border-highlight)]"

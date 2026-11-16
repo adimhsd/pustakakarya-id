@@ -6,7 +6,7 @@ const Legal = () => {
     return (
         <section id="legal" className="py-[var(--section-pad)] bg-transparent">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center mb-5 md:mb-6">
+                <div className="text-center mb-7 md:mb-8">
                     <div className="inline-flex items-center justify-center p-2.5 badge-cyan rounded-full mb-2.5">
                         <ShieldCheck size={20} />
                     </div>
@@ -21,7 +21,7 @@ const Legal = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-5 md:gap-6">
+                <div className="grid md:grid-cols-2 gap-6 md:gap-8">
                     {LEGAL_CONTENT.documents.map((doc, index) => (
                         <div key={index} className="group relative">
                             <div className="relative overflow-hidden rounded-[12px] border border-line hover:border-[var(--border-highlight)] bg-surface-card shadow-[var(--shadow-card)] transition duration-300">

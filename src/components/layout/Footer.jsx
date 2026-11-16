@@ -4,7 +4,7 @@ import { Instagram, Facebook, Twitter } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer id="contact" className="bg-surface-elevated text-ink-muted border-t border-line py-6">
+        <footer id="contact" className="bg-surface-elevated text-ink-muted border-t border-line py-7">
             <div className="max-w-7xl mx-auto px-6 text-center">
                 <div className="font-bold text-ink-primary text-lg mb-1.5">
                     <span className="text-ubuntu-orange">DIGITAL</span> PUSTAKA KARYA

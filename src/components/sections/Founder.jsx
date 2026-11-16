@@ -6,7 +6,7 @@ const Founder = () => {
     return (
         <section id="founder" className="py-[var(--section-pad)] bg-surface-elevated/60 border-y border-line">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-8 bg-surface-card border border-line rounded-[12px] shadow-[var(--shadow-card)] p-5 md:p-7">
+                <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-8 bg-surface-card border border-line rounded-[12px] shadow-[var(--shadow-card)] p-6 md:p-8">
                     {/* Avatar + Status Pill matching adi-muhamad.my.id */}
                     <div className="flex flex-col items-center flex-shrink-0">
                         <div className="relative w-40 h-40 md:w-52 md:h-52">
