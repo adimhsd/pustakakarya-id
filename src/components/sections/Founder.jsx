@@ -4,12 +4,12 @@ import { Globe, MessageSquare, ExternalLink } from 'lucide-react';
 
 const Founder = () => {
     return (
-        <section id="founder" className="py-12 md:py-20 bg-surface-elevated/60 border-y border-line">
+        <section id="founder" className="py-[var(--section-pad)] bg-surface-elevated/60 border-y border-line">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="flex flex-col lg:flex-row items-center lg:items-start gap-8 lg:gap-12 bg-surface-card border border-line rounded-[12px] shadow-[var(--shadow-card)] p-6 md:p-10 lg:p-12">
+                <div className="flex flex-col lg:flex-row items-center lg:items-start gap-6 lg:gap-8 bg-surface-card border border-line rounded-[12px] shadow-[var(--shadow-card)] p-5 md:p-7">
                     {/* Avatar + Status Pill matching adi-muhamad.my.id */}
                     <div className="flex flex-col items-center flex-shrink-0">
-                        <div className="relative w-44 h-44 md:w-60 md:h-60">
+                        <div className="relative w-40 h-40 md:w-52 md:h-52">
                             <div
                                 className="absolute -inset-1.5 rounded-[24px] opacity-75 blur-[8px]"
                                 style={{
@@ -29,16 +29,16 @@ const Founder = () => {
                         </div>
                     </div>
 
-                    <div className="flex-1 text-center lg:text-left pt-2 lg:pt-0">
-                        <div className="inline-block persona-tag px-3 py-1 text-xs font-semibold mb-3">
+                    <div className="flex-1 text-center lg:text-left pt-1 lg:pt-0">
+                        <div className="inline-block persona-tag px-3 py-1 text-xs font-semibold mb-2">
                             {FOUNDER_CONTENT.personaTag}
                         </div>
 
-                        <h2 className="text-2xl md:text-3xl font-bold text-ink-primary mb-2">
+                        <h2 className="text-2xl md:text-3xl font-bold text-ink-primary mb-1.5">
                             {FOUNDER_CONTENT.name}
                         </h2>
 
-                        <div className="space-y-1 mb-5">
+                        <div className="space-y-0.5 mb-3.5">
                             <p className="text-sm md:text-base text-ubuntu-orange font-semibold">
                                 {FOUNDER_CONTENT.role}
                             </p>
@@ -47,11 +47,11 @@ const Founder = () => {
                             </p>
                         </div>
 
-                        <p className="text-sm md:text-base text-ink-secondary leading-relaxed mb-5">
+                        <p className="text-sm md:text-base text-ink-secondary leading-relaxed mb-3.5">
                             {FOUNDER_CONTENT.bio}
                         </p>
 
-                        <blockquote className="bg-[image:var(--bg-quote)] border-l-4 border-ubuntu-aubergine p-4 rounded-r-[12px] text-sm text-ink-secondary leading-relaxed italic mb-6 text-left">
+                        <blockquote className="bg-[image:var(--bg-quote)] border-l-4 border-ubuntu-aubergine p-3.5 rounded-r-[12px] text-sm text-ink-secondary leading-relaxed italic mb-4 text-left">
                             "{FOUNDER_CONTENT.quote}"
                         </blockquote>
 

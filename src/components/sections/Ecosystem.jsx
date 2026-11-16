@@ -28,13 +28,13 @@ const PALETTE_MAP = {
 
 const Ecosystem = () => {
     return (
-        <section id="ecosystem" className="py-12 md:py-20 bg-transparent">
+        <section id="ecosystem" className="py-[var(--section-pad)] bg-transparent">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center mb-10 md:mb-16">
-                    <div className="font-mono text-xs uppercase tracking-wider text-ubuntu-orange mb-2">
+                <div className="text-center mb-5 md:mb-6">
+                    <div className="font-mono text-xs uppercase tracking-wider text-ubuntu-orange mb-1.5">
                         // Layanan & Ekosistem Bisnis
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-ink-primary mb-4 text-balance">
+                    <h2 className="text-2xl md:text-3xl font-bold text-ink-primary mb-2 text-balance">
                         System Builder & Automation sebagai Inti Ekosistem Digital
                     </h2>
                     <p className="text-sm md:text-base text-ink-muted max-w-2xl mx-auto">
@@ -42,7 +42,7 @@ const Ecosystem = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-5">
                     {ECOSYSTEM_SERVICES.map((service) => {
                         const palette = PALETTE_MAP[service.color] || PALETTE_MAP.blue;
                         const Icon = service.icon;
@@ -52,13 +52,13 @@ const Ecosystem = () => {
                             <div
                                 key={service.id}
                                 className={clsx(
-                                    "rounded-[12px] bg-surface-card hover:bg-surface-hover border shadow-[var(--shadow-card)] p-6 md:p-7 transition group flex flex-col h-full",
+                                    "rounded-[12px] bg-surface-card hover:bg-surface-hover border shadow-[var(--shadow-card)] p-5 transition group flex flex-col h-full",
                                     isPrimary
                                         ? "border-ubuntu-orange/60 ring-1 ring-ubuntu-orange/20 hover:border-ubuntu-orange"
                                         : "border-line hover:border-[var(--border-highlight)]"
                                 )}
                             >
-                                <div className="flex items-center justify-between gap-2 mb-5">
+                                <div className="flex items-center justify-between gap-2 mb-3.5">
                                     <div
                                         className={clsx(
                                             "w-11 h-11 rounded-[8px] flex items-center justify-center transition duration-300",

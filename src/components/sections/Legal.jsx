@@ -4,16 +4,16 @@ import { ShieldCheck } from 'lucide-react';
 
 const Legal = () => {
     return (
-        <section id="legal" className="py-12 md:py-20 bg-transparent">
+        <section id="legal" className="py-[var(--section-pad)] bg-transparent">
             <div className="max-w-7xl mx-auto px-6">
-                <div className="text-center mb-10 md:mb-16">
-                    <div className="inline-flex items-center justify-center p-3 badge-cyan rounded-full mb-4">
-                        <ShieldCheck size={24} />
+                <div className="text-center mb-5 md:mb-6">
+                    <div className="inline-flex items-center justify-center p-2.5 badge-cyan rounded-full mb-2.5">
+                        <ShieldCheck size={20} />
                     </div>
-                    <div className="font-mono text-xs uppercase tracking-wider text-ubuntu-orange mb-2">
+                    <div className="font-mono text-xs uppercase tracking-wider text-ubuntu-orange mb-1.5">
                         Kredibilitas & Kepatuhan
                     </div>
-                    <h2 className="text-2xl md:text-3xl font-bold text-ink-primary mb-4">
+                    <h2 className="text-2xl md:text-3xl font-bold text-ink-primary mb-2">
                         {LEGAL_CONTENT.title}
                     </h2>
                     <p className="text-sm md:text-base text-ink-muted max-w-2xl mx-auto leading-relaxed">
@@ -21,7 +21,7 @@ const Legal = () => {
                     </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 gap-8 md:gap-10">
+                <div className="grid md:grid-cols-2 gap-5 md:gap-6">
                     {LEGAL_CONTENT.documents.map((doc, index) => (
                         <div key={index} className="group relative">
                             <div className="relative overflow-hidden rounded-[12px] border border-line hover:border-[var(--border-highlight)] bg-surface-card shadow-[var(--shadow-card)] transition duration-300">

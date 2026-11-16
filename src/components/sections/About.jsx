@@ -3,19 +3,19 @@ import { ABOUT_CONTENT } from '../../constants';
 
 const About = () => {
     return (
-        <section id="about" className="py-12 md:py-16 bg-surface-elevated/60 border-y border-line">
-            <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+        <section id="about" className="py-[var(--section-pad)] bg-surface-elevated/60 border-y border-line">
+            <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-6 md:gap-8 items-center">
                 <div>
-                    <span className="inline-block font-mono text-xs uppercase tracking-wider text-ubuntu-orange mb-3">
+                    <span className="inline-block font-mono text-xs uppercase tracking-wider text-ubuntu-orange mb-2">
                         // Tentang Perusahaan
                     </span>
-                    <h2 className="text-2xl md:text-3xl font-bold text-ink-primary mb-4 md:mb-6">
+                    <h2 className="text-2xl md:text-3xl font-bold text-ink-primary mb-3">
                         {ABOUT_CONTENT.title}
                     </h2>
-                    <p className="text-sm md:text-base text-ink-secondary leading-relaxed mb-6">
+                    <p className="text-sm md:text-base text-ink-secondary leading-relaxed mb-4">
                         {ABOUT_CONTENT.description}
                     </p>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:gap-6">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3.5 md:gap-4">
                         <div className="rounded-[12px] p-4 bg-surface-card border border-line shadow-[var(--shadow-card)]">
                             <div className="font-bold text-ubuntu-orange text-lg mb-1">Visi</div>
                             <p className="text-sm text-ink-muted leading-relaxed">

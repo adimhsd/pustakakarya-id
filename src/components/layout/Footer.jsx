@@ -4,17 +4,17 @@ import { Instagram, Facebook, Twitter } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer id="contact" className="bg-surface-elevated text-ink-muted border-t border-line py-10">
+        <footer id="contact" className="bg-surface-elevated text-ink-muted border-t border-line py-6">
             <div className="max-w-7xl mx-auto px-6 text-center">
-                <div className="font-bold text-ink-primary text-lg mb-2">
+                <div className="font-bold text-ink-primary text-lg mb-1.5">
                     <span className="text-ubuntu-orange">DIGITAL</span> PUSTAKA KARYA
                 </div>
-                <p className="text-xs text-ink-secondary mb-6 max-w-md mx-auto leading-relaxed">
+                <p className="text-xs text-ink-secondary mb-4 max-w-md mx-auto leading-relaxed">
                     {COMPANY_INFO.name} <br />
                     <span className="font-mono text-ink-muted">Email: {COMPANY_INFO.email}</span>
                 </p>
 
-                <div className="flex items-center justify-center gap-4 mb-6">
+                <div className="flex items-center justify-center gap-3.5 mb-4">
                     <a
                         href={COMPANY_INFO.socials.instagram}
                         target="_blank"
@@ -55,7 +55,7 @@ const Footer = () => {
                     </a>
                 </div>
 
-                <div className="font-mono text-xs text-ink-muted border-t border-line pt-6">
+                <div className="font-mono text-xs text-ink-muted border-t border-line pt-4">
                     {FOOTER_CONTENT.copyright}
                 </div>
             </div>
