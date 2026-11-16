@@ -1,0 +1,27 @@
+{
+  "name": "PT Digital Pustaka Karya Indonesia",
+  "short_name": "Pustaka Karya",
+  "description": "Solusi Pengembangan System & Automation serta Ekosistem Literasi Digital",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1E1E1E",
+  "theme_color": "#E95420",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

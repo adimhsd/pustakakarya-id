@@ -7,7 +7,7 @@ export const COMPANY_INFO = {
   email: "admin@pustakakarya.id",
   phone: "6285117705470",
   address: "Kuningan, Jawa Barat, Indonesia",
-  whatsappUrl: "https://wa.me/6285117705470",
+  whatsappUrl: "https://wa.me/6285117705470?text=Halo%20Admin%20PT%20Digital%20Pustaka%20Karya%20Indonesia%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20pengembangan%20sistem%20dan%20ekosistem%20digital.",
   socials: {
     instagram: "https://www.instagram.com/adimhsd",
     facebook: "https://www.facebook.com/adimuhamad28",
@@ -25,7 +25,7 @@ export const NAVIGATION = [
 
 export const HERO_CONTENT = {
   badge: "System Builder • AI Automation • EdTech & Publishing",
-  headlinePrefix: "Solusi System Builder & Automation",
+  headlinePrefix: "Solusi Pengembangan System & Automation",
   headlineHighlight: "serta Ekosistem Literasi Digital",
   subheadline: "PT Digital Pustaka Karya Indonesia hadir sebagai mitra strategis dengan fokus utama pada layanan System Builder & Automation (pengembangan sistem web, AI Agent, RAG, & otomatisasi alur kerja), didukung layanan penerbitan buku ber-ISBN, pengelolaan jurnal ilmiah OJS, dan edukasi teknologi terapan.",
   ctaPrimary: { label: "Jelajahi Layanan", href: "#ecosystem" },
@@ -71,18 +71,7 @@ export const FOUNDER_CONTENT = {
   quote: "Dalam berkarya dan membangun sistem, kami berupaya memimpin lewat kebermanfaatan nyata serta menjaga kemandirian teknologi agar setiap institusi dan pelaku usaha memiliki sistem yang handal, terotomatisasi, dan merdeka.",
   imageUrl: founderPhoto,
   websiteUrl: "https://adi-muhamad.my.id/",
-  blogUrl: "https://blog.adi-muhamad.my.id/",
-  chatUrl: "https://chat.adi-muhamad.my.id/",
-  scholarUrl: "https://scholar.google.com/citations?user=xc8MNfoAAAAJ&hl=id",
-  sintaUrl: "https://sinta.kemdiktisaintek.go.id/authors/profile/6768934",
-  githubUrl: "https://github.com/adimhsd",
-  tags: [
-    "System Builder & Automation",
-    "Artificial Intelligence (LLM, RAG, AI Agents)",
-    "Machine Learning & Data Mining",
-    "Big Data Analytics & BI",
-    "Cloud & Self-Hosted Infrastructure"
-  ]
+  chatUrl: "https://chat.adi-muhamad.my.id/"
 };
 
 export const ECOSYSTEM_SERVICES = [

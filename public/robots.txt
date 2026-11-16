@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pustakakarya-id.web.app/sitemap.xml

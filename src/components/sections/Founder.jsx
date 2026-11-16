@@ -1,6 +1,6 @@
 import React from 'react';
 import { FOUNDER_CONTENT } from '../../constants';
-import { Globe, MessageSquare, FileText, GraduationCap, Award, Github, ExternalLink } from 'lucide-react';
+import { Globe, MessageSquare, ExternalLink } from 'lucide-react';
 
 const Founder = () => {
     return (
@@ -55,19 +55,7 @@ const Founder = () => {
                             "{FOUNDER_CONTENT.quote}"
                         </blockquote>
 
-                        <div className="flex flex-wrap justify-center lg:justify-start gap-2.5 mb-6">
-                            {FOUNDER_CONTENT.tags.map((tag, index) => (
-                                <div
-                                    key={index}
-                                    className="font-mono text-xs bg-surface-tag border border-line text-ink-secondary px-3 py-1.5 rounded-[8px] flex items-center gap-2"
-                                >
-                                    <span className="w-1.5 h-1.5 bg-ubuntu-orange rounded-full" />
-                                    <span>{tag}</span>
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* Links to adi-muhamad.my.id & profiles */}
+                        {/* Links to adi-muhamad.my.id & Chat AI */}
                         <div className="flex flex-wrap justify-center lg:justify-start gap-3">
                             <a
                                 href={FOUNDER_CONTENT.websiteUrl}
@@ -87,42 +75,6 @@ const Founder = () => {
                             >
                                 <MessageSquare size={15} className="text-ubuntu-orange" />
                                 <span>Chat AI Saya</span>
-                            </a>
-                            <a
-                                href={FOUNDER_CONTENT.blogUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn inline-flex items-center gap-2 px-4 py-2.5 text-xs md:text-sm font-medium"
-                            >
-                                <FileText size={15} className="text-ubuntu-orange" />
-                                <span>Blog</span>
-                            </a>
-                            <a
-                                href={FOUNDER_CONTENT.scholarUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn inline-flex items-center gap-2 px-4 py-2.5 text-xs md:text-sm font-medium"
-                            >
-                                <GraduationCap size={15} className="text-semantic-info" />
-                                <span>Google Scholar</span>
-                            </a>
-                            <a
-                                href={FOUNDER_CONTENT.sintaUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn inline-flex items-center gap-2 px-4 py-2.5 text-xs md:text-sm font-medium"
-                            >
-                                <Award size={15} className="text-semantic-amber" />
-                                <span>SINTA</span>
-                            </a>
-                            <a
-                                href={FOUNDER_CONTENT.githubUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="btn inline-flex items-center gap-2 px-4 py-2.5 text-xs md:text-sm font-medium"
-                            >
-                                <Github size={15} />
-                                <span>GitHub</span>
                             </a>
                         </div>
                     </div>
