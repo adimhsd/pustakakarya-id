@@ -4,7 +4,7 @@ import founderPhoto from './assets/adi-muhamad.jpg';
 export const COMPANY_INFO = {
   name: "PT Digital Pustaka Karya Indonesia",
   shortName: "Pustaka Karya",
-  email: "admin@pustakakarya.id",
+  email: "digitalpustakakarya.id@gmail.com",
   phone: "6285117705470",
   address: "Kuningan, Jawa Barat, Indonesia",
   whatsappUrl: "https://wa.me/6285117705470?text=Halo%20Admin%20PT%20Digital%20Pustaka%20Karya%20Indonesia%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20pengembangan%20sistem%20dan%20ekosistem%20digital.",
@@ -37,28 +37,9 @@ export const ABOUT_CONTENT = {
   description: "Berangkat dari kebutuhan nyata di dunia industri, perguruan tinggi, dan UMKM, PT Digital Pustaka Karya Indonesia menempatkan layanan System Builder & Automation sebagai fokus utama. Kami merancang dan membangun sistem informasi kustom, otomatisasi proses kerja (workflow automation), serta integrasi Artificial Intelligence yang praktis, realistis, dan berdampak langsung—sembari terus memperkuat ekosistem penerbitan buku, jurnal ilmiah, dan pelatihan digital.",
   vision: "Menjadi pusat pengembangan sistem terotomatisasi (System Builder & Automation) dan ekosistem literasi digital terpadu yang berdampak nyata di Indonesia.",
   mission: "Membangun sistem digital & otomatisasi cerdas, memperluas akses publikasi ilmiah berkualitas, serta menyelenggarakan edukasi teknologi berbasis praktik industri.",
-  highlights: [
-    {
-      label: "Fokus Utama",
-      title: "System Builder & Automation",
-      desc: "Aplikasi web kustom, integrasi API/Payment Gateway, & workflow automation."
-    },
-    {
-      label: "Kecerdasan Buatan",
-      title: "AI Integration (LLM, RAG, Agent)",
-      desc: "Chatbot berbasis basis pengetahuan, OCR otomatis, & analitik data."
-    },
-    {
-      label: "Publikasi Akademik",
-      title: "Penerbitan Buku ISBN & HKI",
-      desc: "Penerbitan buku fisik/digital dan pendampingan hak kekayaan intelektual."
-    },
-    {
-      label: "Riset & Pelatihan",
-      title: "Manajemen OJS & Academy",
-      desc: "Pengelolaan jurnal ilmiah standar OJS serta bootcamp Data & AI."
-    }
-  ]
+  imageUrl: "/images/office-workspace.jpg",
+  imageAlt: "Suasana Kerja & Kolaborasi Tim PT Digital Pustaka Karya Indonesia",
+  imageCaption: "Kolaborasi Rekayasa Sistem, Riset AI & Literasi Digital"
 };
 
 export const FOUNDER_CONTENT = {
@@ -81,13 +62,12 @@ export const ECOSYSTEM_SERVICES = [
     title: "System Builder & Automation",
     description: "Layanan utama perancangan dan pembangunan sistem informasi kustom, otomatisasi alur kerja (workflow automation), serta integrasi AI terapan untuk kampus, instansi, dan UMKM.",
     details: [
-      "Custom Web, PWA & Sistem Informasi Manajemen",
       "Workflow Automation (n8n, API & Payment Gateway)",
       "Integrasi AI (LLM, RAG Chatbot, OCR & Analytics)",
       "Cloud, Linux VPS & Self-Hosted Infrastructure"
     ],
     cta: "Konsultasi & Portofolio",
-    link: "https://dev.pustakakarya.id",
+    link: "https://wa.me/6285117705470?text=Halo%20Admin%20PT%20Digital%20Pustaka%20Karya%20Indonesia%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20System%20Builder%20%26%20Automation%20(pengembangan%20sistem%2C%20workflow%20automation%2C%20atau%20integrasi%20AI).",
     icon: Code,
     color: "blue",
     letter: "S"
@@ -103,7 +83,7 @@ export const ECOSYSTEM_SERVICES = [
       "Pendampingan & Pengurusan HKI / Hak Cipta"
     ],
     cta: "Terbitkan Karya",
-    link: "https://buku.pustakakarya.id",
+    link: "https://wa.me/6285117705470?text=Halo%20Admin%20PT%20Digital%20Pustaka%20Karya%20Indonesia%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20Penerbitan%20Buku%20ber-ISBN%20dan%20Pengurusan%20HKI%20di%20Pustaka%20Karya%20Publishing.",
     icon: BookOpen,
     color: "purple",
     letter: "P"
@@ -119,7 +99,7 @@ export const ECOSYSTEM_SERVICES = [
       "Pendampingan Tata Kelola & Indeksasi Ilmiah"
     ],
     cta: "Kirim Manuskrip",
-    link: "https://jurnal.pustakakarya.id",
+    link: "https://wa.me/6285117705470?text=Halo%20Admin%20PT%20Digital%20Pustaka%20Karya%20Indonesia%2C%20saya%20ingin%20berkonsultasi%20mengenai%20layanan%20Manajemen%20OJS%20%26%20Publikasi%20Jurnal%20Ilmiah.",
     icon: FileText,
     color: "green",
     letter: "J"
@@ -135,7 +115,7 @@ export const ECOSYSTEM_SERVICES = [
       "In-House Training Transformasi Digital"
     ],
     cta: "Mulai Belajar",
-    link: "https://academy.pustakakarya.id",
+    link: "https://wa.me/6285117705470?text=Halo%20Admin%20PT%20Digital%20Pustaka%20Karya%20Indonesia%2C%20saya%20ingin%20berkonsultasi%20mengenai%20program%20pelatihan%20dan%20workshop%20di%20Pustaka%20Karya%20Academy.",
     icon: GraduationCap,
     color: "orange",
     letter: "A"

@@ -1,6 +1,5 @@
 import React from 'react';
 import { ABOUT_CONTENT } from '../../constants';
-import clsx from 'clsx';
 
 const About = () => {
     return (
@@ -32,43 +31,22 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className="rounded-[12px] border border-line bg-surface-card shadow-[var(--shadow-card)] p-6">
-                    <div className="flex items-center justify-between gap-2 mb-4 pb-3 border-b border-line">
-                        <div>
-                            <div className="font-mono text-xs uppercase tracking-wider text-ubuntu-orange">
-                                Fokus & Pilar Ekosistem
-                            </div>
-                            <h3 className="font-bold text-base md:text-lg text-ink-primary">
-                                Arsitektur Layanan Terintegrasi
-                            </h3>
-                        </div>
-                        <span className="badge-cyan font-mono text-[11px] font-semibold px-2.5 py-1">
-                            4 Unit Layanan
-                        </span>
+                <div className="group relative overflow-hidden rounded-[12px] border border-line hover:border-[var(--border-highlight)] bg-surface-card shadow-[var(--shadow-card)] transition duration-300">
+                    <div className="aspect-[16/10] w-full overflow-hidden bg-surface-elevated">
+                        <img
+                            src={ABOUT_CONTENT.imageUrl}
+                            alt={ABOUT_CONTENT.imageAlt}
+                            className="w-full h-full object-cover group-hover:scale-105 transition duration-500 ease-in-out"
+                            loading="lazy"
+                        />
                     </div>
-
-                    <div className="grid sm:grid-cols-2 gap-3.5">
-                        {ABOUT_CONTENT.highlights.map((item, idx) => (
-                            <div
-                                key={item.title}
-                                className={clsx(
-                                    "rounded-[8px] p-4 border transition",
-                                    idx === 0
-                                        ? "bg-[image:var(--bg-quote)] border-[var(--border-highlight)]"
-                                        : "bg-surface-elevated border-line"
-                                )}
-                            >
-                                <div className="font-mono text-[11px] uppercase tracking-wider text-ubuntu-orange mb-1">
-                                    {item.label}
-                                </div>
-                                <div className="font-bold text-sm text-ink-primary mb-1">
-                                    {item.title}
-                                </div>
-                                <p className="text-xs text-ink-muted leading-relaxed">
-                                    {item.desc}
-                                </p>
-                            </div>
-                        ))}
+                    <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#1E1E1E]/95 via-[#1E1E1E]/75 to-transparent p-5 md:p-6 text-[#F7F7F7]">
+                        <div className="font-mono text-[11px] uppercase tracking-wider text-ubuntu-orange mb-1">
+                            Digital Pustaka Karya Workspace
+                        </div>
+                        <p className="font-semibold text-sm md:text-base">
+                            {ABOUT_CONTENT.imageCaption}
+                        </p>
                     </div>
                 </div>
             </div>
