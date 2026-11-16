@@ -5,14 +5,18 @@ const Hero = () => {
     return (
         <section className="pt-28 pb-12 md:pt-36 md:pb-20 px-6">
             <div className="max-w-7xl mx-auto text-center">
-                <div className="inline-flex items-center gap-2 persona-tag px-3.5 py-1 text-xs mb-6">
+                <div className="inline-flex items-center gap-2 persona-tag px-3.5 py-1 text-xs mb-4">
                     <span className="w-2 h-2 rounded-full bg-ubuntu-orange"></span>
                     <span>{COMPANY_INFO.name}</span>
                 </div>
 
+                <div className="font-mono text-xs text-ink-muted mb-4">
+                    {HERO_CONTENT.badge}
+                </div>
+
                 <h1 className="text-3xl md:text-6xl font-bold leading-tight mb-4 md:mb-6 text-ink-primary animate-fade-in-up">
-                    Menjembatani Inovasi Akademik <br className="hidden md:block" />
-                    <span className="text-ubuntu-orange">dengan Solusi Digital</span>
+                    {HERO_CONTENT.headlinePrefix} <br className="hidden md:block" />
+                    <span className="text-ubuntu-orange">{HERO_CONTENT.headlineHighlight}</span>
                 </h1>
 
                 <p className="text-base md:text-lg text-ink-secondary max-w-3xl mx-auto mb-8 md:mb-10 leading-relaxed">

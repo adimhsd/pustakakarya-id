@@ -11,9 +11,9 @@ function App() {
     <Layout>
       <Hero />
       <About />
-      <Legal />
-      <Founder />
       <Ecosystem />
+      <Founder />
+      <Legal />
     </Layout>
   );
 }

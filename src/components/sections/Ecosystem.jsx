@@ -32,13 +32,13 @@ const Ecosystem = () => {
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-10 md:mb-16">
                     <div className="font-mono text-xs uppercase tracking-wider text-ubuntu-orange mb-2">
-                        Ekosistem Layanan
+                        // Layanan & Ekosistem Bisnis
                     </div>
                     <h2 className="text-2xl md:text-3xl font-bold text-ink-primary mb-4 text-balance">
-                        Satu Pintu untuk Transformasi Digital Anda
+                        System Builder & Automation sebagai Inti Ekosistem Digital
                     </h2>
                     <p className="text-sm md:text-base text-ink-muted max-w-2xl mx-auto">
-                        Kami menjembatani gap antara teori akademis dan implementasi industri melalui unit bisnis yang terintegrasi.
+                        Kami memprioritaskan pembangunan sistem cerdas dan otomatisasi proses kerja, ditunjang layanan penerbitan buku ber-ISBN, manajemen jurnal OJS, dan pelatihan teknologi.
                     </p>
                 </div>
 
@@ -46,19 +46,37 @@ const Ecosystem = () => {
                     {ECOSYSTEM_SERVICES.map((service) => {
                         const palette = PALETTE_MAP[service.color] || PALETTE_MAP.blue;
                         const Icon = service.icon;
+                        const isPrimary = service.id === 'dev';
 
                         return (
                             <div
                                 key={service.id}
-                                className="rounded-[12px] bg-surface-card hover:bg-surface-hover border border-line hover:border-[var(--border-highlight)] shadow-[var(--shadow-card)] p-6 md:p-8 transition group flex flex-col h-full"
+                                className={clsx(
+                                    "rounded-[12px] bg-surface-card hover:bg-surface-hover border shadow-[var(--shadow-card)] p-6 md:p-7 transition group flex flex-col h-full",
+                                    isPrimary
+                                        ? "border-ubuntu-orange/60 ring-1 ring-ubuntu-orange/20 hover:border-ubuntu-orange"
+                                        : "border-line hover:border-[var(--border-highlight)]"
+                                )}
                             >
-                                <div
-                                    className={clsx(
-                                        "w-12 h-12 rounded-[8px] flex items-center justify-center mb-6 transition duration-300",
-                                        palette.badge
+                                <div className="flex items-center justify-between gap-2 mb-5">
+                                    <div
+                                        className={clsx(
+                                            "w-11 h-11 rounded-[8px] flex items-center justify-center transition duration-300",
+                                            palette.badge
+                                        )}
+                                    >
+                                        <Icon size={22} />
+                                    </div>
+                                    {service.badge && (
+                                        <span
+                                            className={clsx(
+                                                "font-mono text-[10px] font-bold uppercase tracking-wider px-2.5 py-1",
+                                                palette.badge
+                                            )}
+                                        >
+                                            {service.badge}
+                                        </span>
                                     )}
-                                >
-                                    <Icon size={24} />
                                 </div>
 
                                 <h3 className="font-bold text-lg text-ink-primary mb-2 text-balance">

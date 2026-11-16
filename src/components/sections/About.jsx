@@ -1,13 +1,14 @@
 import React from 'react';
 import { ABOUT_CONTENT } from '../../constants';
+import clsx from 'clsx';
 
 const About = () => {
     return (
         <section id="about" className="py-12 md:py-16 bg-surface-elevated/60 border-y border-line">
-            <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+            <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
                 <div>
                     <span className="inline-block font-mono text-xs uppercase tracking-wider text-ubuntu-orange mb-3">
-                        Tentang Kami
+                        // Tentang Perusahaan
                     </span>
                     <h2 className="text-2xl md:text-3xl font-bold text-ink-primary mb-4 md:mb-6">
                         {ABOUT_CONTENT.title}
@@ -30,17 +31,44 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="relative">
-                    <div className="aspect-video rounded-[12px] border border-line bg-[image:var(--bg-quote)] shadow-[var(--shadow-card)] overflow-hidden flex flex-col items-center justify-center p-6 text-center">
-                        <span className="persona-tag px-3 py-1 text-xs mb-3">
-                            Ubuntu Yaru Ecosystem
+
+                <div className="rounded-[12px] border border-line bg-surface-card shadow-[var(--shadow-card)] p-6">
+                    <div className="flex items-center justify-between gap-2 mb-4 pb-3 border-b border-line">
+                        <div>
+                            <div className="font-mono text-xs uppercase tracking-wider text-ubuntu-orange">
+                                Fokus & Pilar Ekosistem
+                            </div>
+                            <h3 className="font-bold text-base md:text-lg text-ink-primary">
+                                Arsitektur Layanan Terintegrasi
+                            </h3>
+                        </div>
+                        <span className="badge-cyan font-mono text-[11px] font-semibold px-2.5 py-1">
+                            4 Unit Layanan
                         </span>
-                        <span className="text-lg md:text-xl font-bold text-ink-primary mb-1">
-                            Digital Workspace Illustration
-                        </span>
-                        <span className="font-mono text-xs text-ink-muted">
-                            Literasi &bull; Teknologi &bull; Kolaborasi
-                        </span>
+                    </div>
+
+                    <div className="grid sm:grid-cols-2 gap-3.5">
+                        {ABOUT_CONTENT.highlights.map((item, idx) => (
+                            <div
+                                key={item.title}
+                                className={clsx(
+                                    "rounded-[8px] p-4 border transition",
+                                    idx === 0
+                                        ? "bg-[image:var(--bg-quote)] border-[var(--border-highlight)]"
+                                        : "bg-surface-elevated border-line"
+                                )}
+                            >
+                                <div className="font-mono text-[11px] uppercase tracking-wider text-ubuntu-orange mb-1">
+                                    {item.label}
+                                </div>
+                                <div className="font-bold text-sm text-ink-primary mb-1">
+                                    {item.title}
+                                </div>
+                                <p className="text-xs text-ink-muted leading-relaxed">
+                                    {item.desc}
+                                </p>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>

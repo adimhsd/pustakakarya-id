@@ -1,112 +1,155 @@
-import { Code, BookOpen, GraduationCap, FileText, Globe, Smartphone, Cloud, PenTool, Layout, ShieldCheck, Video, Users, Mic } from 'lucide-react';
+import { Code, BookOpen, GraduationCap, FileText } from 'lucide-react';
+import founderPhoto from './assets/adi-muhamad.jpg';
 
 export const COMPANY_INFO = {
   name: "PT Digital Pustaka Karya Indonesia",
   shortName: "Pustaka Karya",
   email: "admin@pustakakarya.id",
   phone: "6285117705470",
-  address: "Indonesia", // Placeholder
+  address: "Kuningan, Jawa Barat, Indonesia",
   whatsappUrl: "https://wa.me/6285117705470",
   socials: {
-    instagram: "#",
-    facebook: "#",
-    x: "#"
+    instagram: "https://www.instagram.com/adimhsd",
+    facebook: "https://www.facebook.com/adimuhamad28",
+    x: "https://github.com/adimhsd"
   }
 };
 
 export const NAVIGATION = [
   { label: "Tentang Kami", href: "#about" },
-  { label: "Ekosistem", href: "#ecosystem" },
-  { label: "Layanan", href: "#services" }, // Added based on typical needs
+  { label: "Layanan & Ekosistem", href: "#ecosystem" },
+  { label: "Founder", href: "#founder" },
+  { label: "Legalitas", href: "#legal" },
   { label: "Kontak", href: "#contact" },
 ];
 
 export const HERO_CONTENT = {
-  headline: "Menjembatani Inovasi Akademik dengan Solusi Digital",
-  subheadline: "PT Digital Pustaka Karya Indonesia hadir sebagai mitra strategis dalam transformasi digital, publikasi ilmiah, dan pengembangan kompetensi berbasis industri.",
-  ctaPrimary: { label: "Jelajahi Ekosistem", href: "#ecosystem" },
-  ctaSecondary: { label: "Pelajari Visi Kami", href: "#about" },
+  badge: "System Builder • AI Automation • EdTech & Publishing",
+  headlinePrefix: "Solusi System Builder & Automation",
+  headlineHighlight: "serta Ekosistem Literasi Digital",
+  subheadline: "PT Digital Pustaka Karya Indonesia hadir sebagai mitra strategis dengan fokus utama pada layanan System Builder & Automation (pengembangan sistem web, AI Agent, RAG, & otomatisasi alur kerja), didukung layanan penerbitan buku ber-ISBN, pengelolaan jurnal ilmiah OJS, dan edukasi teknologi terapan.",
+  ctaPrimary: { label: "Jelajahi Layanan", href: "#ecosystem" },
+  ctaSecondary: { label: "Profil Founder", href: "#founder" },
 };
 
 export const ABOUT_CONTENT = {
-  title: "Membangun Masa Depan dari Akar Literasi dan Teknologi",
-  description: "Berawal dari visi untuk menyatukan dunia akademisi dengan kebutuhan praktis industri, kami percaya bahwa setiap karya ilmiah harus memiliki dampak nyata, dan setiap bisnis harus diperkuat oleh sistem digital yang cerdas.",
-  vision: "Menjadi pusat ekosistem digital terpadu di Indonesia.",
-  mission: "Inovasi, Literasi, Edukasi, dan Kolaborasi.",
+  title: "Sinergi Rekayasa Sistem Otomatisasi, Kecerdasan Buatan, dan Literasi Akademik",
+  description: "Berangkat dari kebutuhan nyata di dunia industri, perguruan tinggi, dan UMKM, PT Digital Pustaka Karya Indonesia menempatkan layanan System Builder & Automation sebagai fokus utama. Kami merancang dan membangun sistem informasi kustom, otomatisasi proses kerja (workflow automation), serta integrasi Artificial Intelligence yang praktis, realistis, dan berdampak langsung—sembari terus memperkuat ekosistem penerbitan buku, jurnal ilmiah, dan pelatihan digital.",
+  vision: "Menjadi pusat pengembangan sistem terotomatisasi (System Builder & Automation) dan ekosistem literasi digital terpadu yang berdampak nyata di Indonesia.",
+  mission: "Membangun sistem digital & otomatisasi cerdas, memperluas akses publikasi ilmiah berkualitas, serta menyelenggarakan edukasi teknologi berbasis praktik industri.",
+  highlights: [
+    {
+      label: "Fokus Utama",
+      title: "System Builder & Automation",
+      desc: "Aplikasi web kustom, integrasi API/Payment Gateway, & workflow automation."
+    },
+    {
+      label: "Kecerdasan Buatan",
+      title: "AI Integration (LLM, RAG, Agent)",
+      desc: "Chatbot berbasis basis pengetahuan, OCR otomatis, & analitik data."
+    },
+    {
+      label: "Publikasi Akademik",
+      title: "Penerbitan Buku ISBN & HKI",
+      desc: "Penerbitan buku fisik/digital dan pendampingan hak kekayaan intelektual."
+    },
+    {
+      label: "Riset & Pelatihan",
+      title: "Manajemen OJS & Academy",
+      desc: "Pengelolaan jurnal ilmiah standar OJS serta bootcamp Data & AI."
+    }
+  ]
 };
 
 export const FOUNDER_CONTENT = {
-  name: "Nama Anda, M.Kom.",
+  name: "Adi Muhamad Muhsidi, S.SI., M.Kom.",
+  personaTag: "⚡ Founder & System Builder",
+  statusLabel: "Dosen & Praktisi AI Aktif",
   role: "Founder & CEO PT Digital Pustaka Karya Indonesia",
+  academicRole: "Lecture S1 Bisnis Digital — Fakultas Ekonomi dan Bisnis, Universitas Kuningan",
+  bio: "Akademisi berlatar belakang Ilmu Komputer & Sistem Informasi di Fakultas Ekonomi dan Bisnis Universitas Kuningan. Berfokus pada System Builder & Automation serta pengembangan aplikasi berbasis Artificial Intelligence (LLM, RAG, AI Agent), Data Mining, Machine Learning, dan Big Data yang bersifat praktis, realistis, serta berdampak langsung bagi dunia pendidikan, kampus, dan UMKM.",
+  quote: "Dalam berkarya dan membangun sistem, kami berupaya memimpin lewat kebermanfaatan nyata serta menjaga kemandirian teknologi agar setiap institusi dan pelaku usaha memiliki sistem yang handal, terotomatisasi, dan merdeka.",
+  imageUrl: founderPhoto,
+  websiteUrl: "https://adi-muhamad.my.id/",
+  blogUrl: "https://blog.adi-muhamad.my.id/",
+  chatUrl: "https://chat.adi-muhamad.my.id/",
+  scholarUrl: "https://scholar.google.com/citations?user=xc8MNfoAAAAJ&hl=id",
+  sintaUrl: "https://sinta.kemdiktisaintek.go.id/authors/profile/6768934",
+  githubUrl: "https://github.com/adimhsd",
   tags: [
-    "Expert in FinTech & Big Data",
-    "Academic Practitioner",
-    "System Architect"
-  ],
-  quote: "Teknologi bukan hanya soal baris kode, tapi soal bagaimana kita mengabadikan karya dan mempermudah akses pengetahuan bagi semua orang. Melalui Pustaka Karya, kami mewujudkan sinergi itu.",
-  imageUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=1000&auto=format&fit=crop"
+    "System Builder & Automation",
+    "Artificial Intelligence (LLM, RAG, AI Agents)",
+    "Machine Learning & Data Mining",
+    "Big Data Analytics & BI",
+    "Cloud & Self-Hosted Infrastructure"
+  ]
 };
 
 export const ECOSYSTEM_SERVICES = [
   {
     id: "dev",
-    title: "Software Dev & IoT",
-    description: "Mewujudkan ide menjadi sistem digital yang handal dan terukur.",
+    badge: "FOKUS UTAMA",
+    title: "System Builder & Automation",
+    description: "Layanan utama perancangan dan pembangunan sistem informasi kustom, otomatisasi alur kerja (workflow automation), serta integrasi AI terapan untuk kampus, instansi, dan UMKM.",
     details: [
-      "Web & Mobile App Development",
-      "IoT Integration (Smart System)",
-      "Cloud & Infrastructure Setup"
+      "Custom Web, PWA & Sistem Informasi Manajemen",
+      "Workflow Automation (n8n, API & Payment Gateway)",
+      "Integrasi AI (LLM, RAG Chatbot, OCR & Analytics)",
+      "Cloud, Linux VPS & Self-Hosted Infrastructure"
     ],
-    cta: "Lihat Portofolio",
+    cta: "Konsultasi & Portofolio",
     link: "https://dev.pustakakarya.id",
     icon: Code,
-    color: "blue", // Helper for styling
-    letter: "D"
+    color: "blue",
+    letter: "S"
   },
   {
     id: "publisher",
-    title: "Publisher & HKI",
-    description: "Layanan profesional untuk mengabadikan karya tulis dan perlindungan hukum.",
+    badge: "PENERBITAN & HKI",
+    title: "Pustaka Karya Publishing",
+    description: "Layanan penerbitan buku fisik dan digital ber-ISBN serta pengurusan Hak Kekayaan Intelektual (HKI) untuk dosen, peneliti, mahasiswa, guru, dan umum.",
     details: [
-      "Penerbitan Buku (ISBN)",
-      "Jasa Editor & Layouter Profesional",
-      "Pengurusan HKI (Hak Kekayaan Intelektual)"
+      "Penerbitan Buku Referensi, Ajar & Monograf (ISBN)",
+      "Jasa Editor, Layouter & Desain Sampul Profesional",
+      "Pendampingan & Pengurusan HKI / Hak Cipta"
     ],
     cta: "Terbitkan Karya",
-    link: "https://publisher.pustakakarya.id",
+    link: "https://buku.pustakakarya.id",
     icon: BookOpen,
     color: "purple",
     letter: "P"
   },
   {
-    id: "academy",
-    title: "Academy (MOOC)",
-    description: "Tingkatkan kompetensi melalui pelatihan berbasis industri dan akademisi.",
+    id: "journal",
+    badge: "JURNAL ILMIAH & PKM",
+    title: "Manajemen OJS & Publikasi",
+    description: "Pengelolaan penerbitan jurnal ilmiah berbasis Open Journal Systems (OJS) untuk hilirisasi hasil penelitian akademik dan pengabdian masyarakat.",
     details: [
-      "E-Course (Video Based Learning)",
-      "Workshop & Professional Certification",
-      "Webinar & Seminar Series"
+      "Jurnal Karya (Scientific Research) & Jurnal Abdi (PKM)",
+      "Instalasi, Kustomisasi & Manajemen Standar OJS",
+      "Pendampingan Tata Kelola & Indeksasi Ilmiah"
+    ],
+    cta: "Kirim Manuskrip",
+    link: "https://jurnal.pustakakarya.id",
+    icon: FileText,
+    color: "green",
+    letter: "J"
+  },
+  {
+    id: "academy",
+    badge: "EDTECH & TRAINING",
+    title: "Pustaka Karya Academy",
+    description: "Pelatihan intensif teknologi informasi, Data Science, AI Automation, Machine Learning, pemrograman, dan transformasi digital berbasis praktik industri.",
+    details: [
+      "Workshop & Bootcamp AI, Data Mining & Python",
+      "E-Course & Modul Praktikum Berbasis Studi Kasus",
+      "In-House Training Transformasi Digital"
     ],
     cta: "Mulai Belajar",
     link: "https://academy.pustakakarya.id",
     icon: GraduationCap,
-    color: "green",
-    letter: "A"
-  },
-  {
-    id: "journal",
-    title: "Scientific Journal",
-    description: "Platform publikasi ilmiah untuk hilirisasi hasil penelitian dan pengabdian.",
-    details: [
-      "Jurnal Karya (Scientific Research)",
-      "Jurnal Abdi (PKM)",
-      "Terindeks & Sesuai Standar OJS"
-    ],
-    cta: "Kirim Manuskrip",
-    link: "https://journal.pustakakarya.id",
-    icon: FileText,
     color: "orange",
-    letter: "J"
+    letter: "A"
   }
 ];
 
@@ -121,7 +164,7 @@ export const LEGAL_CONTENT = {
     {
       title: "Sertifikat Pendaftaran Pendirian",
       subtitle: "Nomor: AHU-022525.AH.01.30.Tahun 2025",
-      imageUrl: "/images/legal/sertifikat.png", // Ensure these file paths match where you place them
+      imageUrl: "/images/legal/sertifikat.png",
       alt: "Sertifikat Pendaftaran Pendirian PT Digital Pustaka Karya Indonesia"
     },
     {
