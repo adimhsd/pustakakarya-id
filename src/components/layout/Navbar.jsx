@@ -42,7 +42,7 @@ const Navbar = () => {
                     <img
                         src="/favicon.png"
                         alt="Logo PT Digital Pustaka Karya Indonesia"
-                        className="hidden md:block w-8 h-8 md:w-9 md:h-9 rounded-full object-contain"
+                        className="w-8 h-8 md:w-9 md:h-9 rounded-full object-contain"
                     />
                     <span>
                         DIGITAL <span className="text-ink-primary">PUSTAKA KARYA</span>
